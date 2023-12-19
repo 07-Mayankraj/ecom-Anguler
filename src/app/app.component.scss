@@ -1,0 +1,99 @@
+mat-toolbar {
+  color: black;
+  width: 100%;
+
+  height: 150px;
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 300px;
+  border-right: none;
+  background:rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid black;
+
+}
+
+
+.nav-section{
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+img{
+  width:  100%;
+}
+.content {
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+  padding: 16px;
+  border: 1px solid black;
+
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  border: .2px solid white;
+  border-radius: 10px;
+  padding: 13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  margin: 10px auto;
+
+  mat-icon {
+    margin-right: 8px;
+  }
+}
+.menu-button:hover {
+  transition: .2s;
+  color: rgb(150, 2, 2);
+  border: .2px solid red;
+}
+
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: rgb(0, 0, 0);
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 0, 0, 0.555);
+}
+.logo{
+  width: 30%;
+}
+.logout{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logout:hover{
+  transition: .2s;
+  color: red;
+  border: .2px solid red;
+
+}
+  

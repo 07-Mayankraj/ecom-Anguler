@@ -1,0 +1,30 @@
+<div class="headerMovies">
+  <h1>Movies  details</h1>
+</div>
+
+<table class="recent">
+  <thead>
+    <tr>
+      <th *ngFor="let header of tableHeaders">{{ header }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of pagedData">
+      <td>{{ item.id}}</td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.year }}</td>
+      <td>{{ item.runtime }}</td>
+      <td>{{ item.geners }}</td>
+      <td>{{ item.director }}</td>
+      <td>{{ item.actors }}</td>
+      <td>{{ item.plot }}</td>
+      <td><img style="width: 80px;height: 100px;" [src]="item.posterUrl"  alt="image"></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pagination">
+  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>{{ currentPage }} / {{ totalPages }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+</div>

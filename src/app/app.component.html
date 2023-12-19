@@ -1,0 +1,41 @@
+<mat-toolbar class="mat-elevation-z8">
+  <div class="nav-section">
+    <div class="avatar">
+      <img
+        src="https://07-mayankraj.github.io/assets/img/about.png"
+        alt="Your Logo"
+        class="logo"
+      />
+    </div>
+    <div mat-button class="logout">
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </div>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/home">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/movie">
+      <mat-icon>movie</mat-icon>
+      <span>Movies</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/order">
+      <mat-icon>shopping_cart</mat-icon>
+      <span>Order</span>
+    </button>
+
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
